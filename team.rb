@@ -5,8 +5,8 @@ class Team
   attr_accessor :name, :win, :lose, :draw
 
   # インスタンスを初期化するための、特別なメソッド
-  def initialize
-    self.name = name
+  def initialize(suffix)
+    self.name = suffix 
     self.win = win
     self.lose = lose
     self.draw = draw
@@ -23,33 +23,27 @@ class Team
 end
 
 # インスタンスの生成と、変数への代入
-team1 = Team.new
-team1.name = "Giants"
+team1 = Team.new("Giants")
 team1.win = 67
 team1.lose = 45
 team1.draw = 8
-team2 = Team.new
-team2.name = "Tigers"
+team2 = Team.new("Tigers")
 team2.win = 60
 team2.lose = 53
 team2.draw = 7
-team3 = Team.new
-team3.name = "Dragons"
+team3 = Team.new("Dragons")
 team3.win = 60
 team3.lose = 55
 team3.draw = 5
-team4 = Team.new
-team4.name = "BayStars"
+team4 = Team.new("BayStars")
 team4.win = 56
 team4.lose = 58
 team4.draw = 6
-team5 = Team.new
-team5.name = "Carp"
+team5 = Team.new("Carp")
 team5.win = 52
 team5.lose = 56
 team5.draw = 12
-team6 = Team.new
-team6.name = "Swallows"
+team6 = Team.new("Swallows")
 team6.win = 41
 team6.lose = 69
 team6.draw = 10
